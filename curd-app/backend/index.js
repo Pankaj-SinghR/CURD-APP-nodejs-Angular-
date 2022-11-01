@@ -13,7 +13,7 @@ app.use(bodyparser.json());
 //database config
 const config = {
     host:'localhost',
-    user:'akitra',
+    user:'user',
     password:'password',
     database:'demodata',
     port:3306
