@@ -10,15 +10,17 @@ const { query } = require('express');
 // app.use(cors());
 app.use(bodyparser.json());
 
-// database connection
-
-const db = mysql.createConnection({
+//database config
+const config = {
     host:'localhost',
     user:'akitra',
     password:'password',
     database:'demodata',
     port:3306
-})
+}
+// database connection
+
+const db = mysql.createConnection(config)
 
 //check database connection
 db.connect((err)=>{
